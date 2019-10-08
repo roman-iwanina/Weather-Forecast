@@ -1,0 +1,183 @@
+:root {
+  --font-text: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  border: 15px solid #0081b1;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+  font-family: var(--font-text);
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* Main Styles */
+
+body {
+  background: #0099cf;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+header {
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+ul {
+  font-size: 0;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+  background: white;
+}
+
+li {
+  display: inline-block;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 30px;
+  height: 130px;
+  width: 100%;
+  font-size: 18px;
+  vertical-align: middle;
+  background: white;
+}
+
+.Lisbon {
+  width: 50%;
+  background: #0099cf;
+}
+
+.Paris {
+  width: 25%;
+  background: #33cbcc;
+}
+
+.Belgrade {
+  width: 25%;
+  background: #986699;
+}
+
+.Moscow {
+  width: 25%;
+  background: #c24847;
+}
+
+.Tel-Aviv {
+  width: 25%;
+  background: #e2664a;
+}
+
+.Cair {
+  width: 25%;
+  background: #ffcc66;
+}
+
+.New-York {
+  width: 25%;
+  background: #9acc99;
+}
+
+.New-Delhi {
+  width: 25%;
+  background: #66999a;
+}
+
+.San-Francisco {
+  width: 50%;
+  background: #cc6698;
+}
+
+.Tokyo {
+  width: 25%;
+  background: #339967;
+}
+
+.Sydney {
+  width: 100%;
+  background: #656798;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+sup {
+  opacity: 80%;
+}
+
+.wi,
+p {
+  padding-top: 10px;
+}
+
+.wi {
+  color: white;
+  opacity: 0.7;
+  font-size: 22px;
+  padding: 5px;
+}
+
+p {
+  display: inline-block;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#main-ico {
+  opacity: 1;
+}
+
+ul:hover li:not(:hover) {
+  opacity: 0.6;
+}
+
+/* ^^^ (если забуду спросить) Вот эту часть с псевдоклассами я ""одолжил". Я правильно понял, что таким образом при наведении на весь ul у нас он становится прозрачным за исключением той li-шки, на которой сейчас курсор? То есть, именно к ней ховер просто не применяется благодаря :not? */
