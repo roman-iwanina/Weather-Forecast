@@ -178,7 +178,6 @@ sup {
 li .wi,
 p {
   padding-top: 10px;
-  /* transition: 0.05s; */
 }
 
 .wi {
@@ -280,11 +279,6 @@ ul:hover li:not(:hover) {
   opacity: 0.7;
   background-position-y: -140px;
 }
-
-/* li:hover .wi,
-li:hover p {
-  color: black;
-} */
 
 li:hover .wi,
 li:hover {
