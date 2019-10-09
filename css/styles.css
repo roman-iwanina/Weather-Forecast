@@ -44,6 +44,15 @@ body {
   color: white;
 }
 
+body::after {
+  content: url(../images/belgrade.jpg) url(../images/cair.jpg)
+    url(../images/lisbon.jpg) url(../images/moscow.jpg)
+    url(../images/new-delhi.jpg) url(../images/new-york.jpg)
+    url(../images/paris.jpg) url(../images/san-francisco.jpg)
+    url(../images/sydney.jpg) url(../images/tel-aviv.jpg) url(../images/);
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 860px;
