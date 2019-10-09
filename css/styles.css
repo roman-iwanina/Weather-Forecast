@@ -8,7 +8,7 @@
   border: 0;
   outline: none;
   box-sizing: border-box;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 img {
@@ -94,56 +94,67 @@ li {
 .Lisbon {
   width: 50%;
   background: #0099cf;
+  transition: 0.3s;
 }
 
 .Paris {
   width: 25%;
   background: #33cbcc;
+  transition: 0.3s;
 }
 
 .Belgrade {
   width: 25%;
   background: #986699;
+  transition: 0.3s;
 }
 
 .Moscow {
   width: 25%;
   background: #c24847;
+  transition: 0.3s;
 }
 
 .Tel-Aviv {
   width: 25%;
   background: #e2664a;
+  transition: 0.3s;
 }
 
 .Cair {
   width: 25%;
   background: #ffcc66;
+  transition: 0.3s;
 }
 
 .New-York {
   width: 25%;
   background: #9acc99;
+  transition: 0.3s;
 }
 
 .New-Delhi {
   width: 25%;
   background: #66999a;
+  transition: 0.3s;
 }
 
 .San-Francisco {
   width: 50%;
   background: #cc6698;
+  transition: 0.3s;
 }
 
 .Tokyo {
   width: 25%;
   background: #339967;
+  transition: 0.3s;
 }
 
 .Sydney {
   width: 100%;
   background: #656798;
+  transition: 0.3s;
 }
 
 footer {
@@ -154,9 +165,10 @@ sup {
   opacity: 80%;
 }
 
-.wi,
+li .wi,
 p {
   padding-top: 10px;
+  transition: 0.05s;
 }
 
 .wi {
@@ -181,3 +193,93 @@ ul:hover li:not(:hover) {
 }
 
 /* ^^^ (если забуду спросить) Вот эту часть с псевдоклассами я ""одолжил". Я правильно понял, что таким образом при наведении на весь ul у нас он становится прозрачным за исключением той li-шки, на которой сейчас курсор? То есть, именно к ней ховер просто не применяется благодаря :not? */
+
+.Lisbon:hover {
+  background-image: url(../images/lisbon.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.Paris:hover {
+  background-image: url(../images/paris.jpg);
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -10px;
+}
+.Belgrade:hover {
+  background-image: url(../images/belgrade.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.Moscow:hover {
+  background-image: url(../images/moscow.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.Tel-Aviv:hover {
+  background-image: url(../images/tel-aviv.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.Cair:hover {
+  background-image: url(../images/cair.jpg);
+  background-size: 130% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.New-York:hover {
+  background-image: url(../images/new-york.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.New-Delhi:hover {
+  background-image: url(../images/new-delhi.jpg);
+  background-size: 110% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.San-Francisco:hover {
+  background-image: url(../images/san-francisco.jpg);
+  background-size: 100% auto;
+  opacity: 0.7;
+  background-position-y: -60px;
+}
+
+.Tokyo:hover {
+  background-image: url(../images/tokyo.jpg);
+  background-size: 130% auto;
+  opacity: 0.7;
+  background-position-y: -20px;
+}
+
+.Sydney:hover {
+  background-image: url(../images/sydney.jpg);
+  background-size: 100% auto;
+  opacity: 0.7;
+  background-position-y: -140px;
+}
+
+/* li:hover .wi,
+li:hover p {
+  color: black;
+} */
+
+li:hover .wi,
+li:hover {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 4px 5px rgba(0, 0, 0, 1),
+    0px 1px 3px rgba(0, 0, 0, 1);
+  color: white;
+  opacity: 1;
+}
