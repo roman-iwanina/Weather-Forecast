@@ -176,6 +176,7 @@ sup {
 li .wi,
 p {
   padding-top: 10px;
+  display: inline-block;
 }
 
 .wi {
